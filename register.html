@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register / Login - EduTech</title>
+    <meta name="description" content="Create an account or login to EduTech.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">EduTech</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="register.html" class="btn btn-outline active">Log in / Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content flex-center min-h-screen">
+        <div class="container" style="max-width: 900px;">
+            <div class="auth-wrapper shadow-large rounded overflow-hidden grid-2-col bg-white my-4">
+                
+                <!-- Login Form -->
+                <div class="auth-box p-4 border-right">
+                    <h2 class="text-center mb-1">Welcome Back</h2>
+                    <p class="text-center text-muted mb-3">Login to access your courses</p>
+                    
+                    <form id="loginForm" novalidate>
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email">
+                            <span class="error-message" id="loginEmailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password">
+                            <span class="error-message" id="loginPasswordError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-2">Login</button>
+                    </form>
+                </div>
+                
+                <!-- Registration Form -->
+                <div class="auth-box p-4 bg-light-gray">
+                    <h2 class="text-center mb-1">Create Account</h2>
+                    <p class="text-center text-muted mb-3">Join our learning community</p>
+                    
+                    <form id="registerForm" novalidate>
+                        <div class="form-group">
+                            <label for="regName">Full Name</label>
+                            <input type="text" id="regName" class="form-control" placeholder="John Doe">
+                            <span class="error-message" id="regNameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="regEmail">Email</label>
+                            <input type="email" id="regEmail" class="form-control" placeholder="john@example.com">
+                            <span class="error-message" id="regEmailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="regPassword">Password</label>
+                            <input type="password" id="regPassword" class="form-control" placeholder="Create a password">
+                            <span class="error-message" id="regPasswordError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="regConfirmPassword">Confirm Password</label>
+                            <input type="password" id="regConfirmPassword" class="form-control" placeholder="Confirm your password">
+                            <span class="error-message" id="regConfirmPasswordError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-2">Sign Up</button>
+                        <p class="text-center text-success mt-2" id="regSuccessMessage" style="display:none;">Registration successful!</p>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-center text-center">
+                <p>&copy; 2026 EduTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Validation Script -->
+    <script src="script.js"></script>
+</body>
+</html>

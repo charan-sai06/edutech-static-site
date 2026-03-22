@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="courses.xsd">
+    <course id="c1">
+        <title>Complete Web Masterclass</title>
+        <instructor>John Doe</instructor>
+        <price currency="USD">49.99</price>
+        <rating>4.9</rating>
+        <duration>40 Hours</duration>
+        <category>Web Development</category>
+        <bestseller>true</bestseller>
+        <description>This comprehensive course covers everything you need to know to become a full-stack web developer.</description>
+    </course>
+    <course id="c2">
+        <title>Data Science Bootcamp</title>
+        <instructor>Jane Smith</instructor>
+        <price currency="USD">59.99</price>
+        <rating>4.7</rating>
+        <duration>65 Hours</duration>
+        <category>Data Science</category>
+        <bestseller>false</bestseller>
+        <description>Learn data analysis, visualization, and machine learning with Python.</description>
+    </course>
+    <course id="c3">
+        <title>Modern UI/UX Design</title>
+        <instructor>Alice Johnson</instructor>
+        <price currency="USD">39.99</price>
+        <rating>4.8</rating>
+        <duration>25 Hours</duration>
+        <category>Design</category>
+        <bestseller>false</bestseller>
+        <description>A complete guide to designing beautiful and functional user interfaces using Figma.</description>
+    </course>
+</courses>
